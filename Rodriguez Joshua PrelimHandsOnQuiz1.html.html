@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelim Hands-On Quiz 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #2c3e50, #3b4c66);
+            background-size: 300% 300%;
+            animation: gradientBG 8s ease infinite;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+            color: white;
+            border: 2px solid gold;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            color: gold;
+            text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .fancy-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            text-align: center;
+            color: gold;
+            text-shadow: 3px 3px 12px rgba(255, 215, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            text-align: left;
+        }
+
+        th {
+            background: rgba(255, 215, 0, 0.2);
+            color: gold;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.3);
+            backdrop-filter: blur(8px);
+            border-left: 5px solid gold;
+        }
+
+        .content-section img {
+            width: 40%;
+            border-radius: 10px;
+            margin-right: 20px;
+            border: 3px solid gold;
+        }
+
+        .content-text {
+            width: 60%;
+        }
+
+        @media (max-width: 768px) {
+            .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-section img {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .content-text {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function updateDate() {
+            const today = new Date();
+            document.getElementById("date").innerText = today.toLocaleDateString();
+        }
+    </script>
+</head>
+<body onload="updateDate()">
+    <div class="container">
+        <h1>Prelim Hands-On Quiz 1</h1>
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>Rodriguez, Joshua Jabez</td>
+            </tr>
+            <tr>
+                <th>Section:</th>
+                <td>ITCD</td>
+            </tr>
+            <tr>
+                <th>Activity No.</th>
+                <td>Hands-on Quiz 1</td>
+            </tr>
+            <tr>
+                <th>Topic:</th>
+                <td>Introduction to HTML5</td>
+            </tr>
+            <tr>
+                <th>Date:</th>
+                <td id="date"></td>
+            </tr>
+        </table>
+        
+        <h2 class="fancy-title">Cubao</h2>
+        
+        <div class="content-section">
+            <img src="CUBAO.jpg" alt="Araneta City">
+            <div class="content-text">
+                <h3>Location</h3>
+                <p>Araneta City, formerly known as Araneta Center, is a bustling commercial hub in Cubao, Quezon City, Philippines. This vibrant district is known for its shopping malls, entertainment venues, and business centers. With its strategic location and accessibility, it serves as a central point for commuters, shoppers, and event-goers. Whether you're here for shopping, food, or concerts, Araneta City has something for everyone.</p>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <img src="CUBAO 2.jpg" alt="Araneta City History">
+            <div class="content-text">
+                <h3>History</h3>
+                <p>Araneta City was founded in 1952 by J. Amado Araneta, a visionary businessman who sought to create a world-class commercial district. Over the years, it has transformed into a premier lifestyle and business destination. One of its most iconic landmarks, the Araneta Coliseum, opened in 1960 and became internationally renowned for hosting significant events, including the legendary "Thrilla in Manila" boxing match between Muhammad Ali and Joe Frazier in 1975. Today, Araneta City continues to grow, blending modern infrastructure with its rich historical legacy.</p>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <div class="content-text">
+                <h3>Why It's My Favorite</h3>
+                <p>Araneta City holds a special place in my heart due to its dynamic atmosphere, lively nightlife, and diverse selection of shopping and dining options. It is home to high-end retail stores, cinemas, concert venues, and restaurants that cater to various tastes. Whether you’re looking for an exciting event, a shopping spree, or a cozy place to unwind, Araneta City offers a unique experience that perfectly blends history, entertainment, and modern convenience.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
